@@ -12,11 +12,9 @@ module.exports = {
   devServer: {
     hot: true,
     port: "7000",
-    // contentBase: __dirname + "/build",
     inline: true,
     historyApiFallback: true,
   },
-
   module: {
     rules: [{
       test: /\.js$/,
@@ -41,6 +39,9 @@ module.exports = {
         loader: "less-loader"
       }]
     }],
+  },
+  devServer: {
+    port: 8888
   },
   plugins: [
     new HtmlWebpackPlugin({
