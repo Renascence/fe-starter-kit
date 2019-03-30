@@ -28,8 +28,6 @@ module.exports = {
           ['import', { libraryName: "antd", style: true }],
         ]
       },
-      // query: {
-      // }
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader'
