@@ -8,5 +8,11 @@ Fe-starter-kit
 ```
     git@github.com:Renascence/fe-starter-kit.git
 
-    git remote set-url YOUR_REPO_URL
+    cd fe-starter-kit
+
+    rm -rf .git/
+
+    git init
+
+    git remote set-url origin YOUR_REPO_URL
 ```
