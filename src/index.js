@@ -3,5 +3,4 @@ import ReactDOM from 'react-dom';
 
 import App from './components/index';
 
-
 ReactDOM.render(<App />, document.getElementById('main'));
