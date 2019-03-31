@@ -1,5 +1,6 @@
 import constants from '../constants';
-export function SetName(name) {
+
+export default function SetName(name) {
   return {
     type: constants.SET_NAME,
     payload: {
