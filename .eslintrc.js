@@ -10,6 +10,7 @@ module.exports = {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -20,8 +21,8 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    "rules": {
-        "semi": "error",
-        "quotes": [1, "single"],
-    }
+    // "rules": {
+    //     "semi": "error",
+    //     "quotes": [1, "single"],
+    // }
 };

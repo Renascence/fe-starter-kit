@@ -29,7 +29,7 @@ module.exports = {
           "@babel/preset-env"
         ],
         plugins: [
-
+          ["@babel/plugin-proposal-class-properties", { "loose": true }],
           ['import', { libraryName: "antd", style: true }],
         ]
       },
