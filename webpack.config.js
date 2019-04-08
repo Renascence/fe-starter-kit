@@ -1,6 +1,7 @@
 /* eslint-disable */
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: __dirname + "/src/index.js",
@@ -39,7 +40,7 @@ module.exports = {
     }, {
       test: /\.less$/,
       use: [{
-        loader: "style-loader"
+        loader: MiniCssExtractPlugin.loader,
       }, {
         loader: "css-loader"
       }, {
@@ -47,13 +48,13 @@ module.exports = {
       }]
     }],
   },
-  devServer: {
-    port: 8888,
-    historyApiFallback: true,
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    })
   ]
 };
